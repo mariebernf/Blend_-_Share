@@ -5,6 +5,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 from .models import Smoothie
 from .forms import SmoothieForm
 
+
 @login_required
 def home(request):
     return render(request, 'smoothies/home.html')
