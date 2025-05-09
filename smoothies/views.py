@@ -2,6 +2,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm
 from django.contrib.auth import login
 from django.shortcuts import render, redirect, get_object_or_404
+from django.contrib import messages
 from .models import Smoothie
 from .forms import SmoothieForm
 
@@ -47,8 +48,10 @@ def signup(request):
         if form.is_valid():
             user = form.save()
             login(request, user)
+            messages.success(request, "Sign up successful! Welcome!")
             return redirect('smoothie_list')
-        
+        else:
+            messages.error(request, "There was an error with your sign up. Please try again.")
     else:
         form = UserCreationForm()
     return render(request, 'smoothies/signup.html', {'form': form})
