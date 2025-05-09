@@ -25,3 +25,9 @@
 **Solution:** *Added the proper path for 'smoothie create'.*
 
 ---
+
+**Issue:** *URL pattern syntax error: Unmatched brackets in the smoothie update and smoothie delete URL patterns.*
+
+**Solution:** *Closed the angle brackets properly in urls.py*
+
+---
