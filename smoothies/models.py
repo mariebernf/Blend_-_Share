@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 class Smoothie(models.Model):
     title = models.CharField(max_length=100)
-    description = models.TextField
+    description = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
 
