@@ -19,3 +19,9 @@
 **Solution:** *Added the signup() function in views.py using UserCreationForm.*
 
 ---
+
+**Issue:** *No Reverse Match error.*
+
+**Solution:** *Added the proper path for 'smoothie create'.*
+
+---
