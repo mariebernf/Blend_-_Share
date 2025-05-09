@@ -16,7 +16,7 @@ def smoothie_create(request):
         smoothie.author = request.user
         smoothie.save()
         return redirect('smoothie_list')
-    return render(request, 'smoothie/smoothie_form.html', {'form': form})
+    return render(request, 'smoothies/smoothie_form.html', {'form': form})
 
 @login_required
 def smoothie_update(request, pk):
