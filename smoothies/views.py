@@ -4,6 +4,10 @@ from django.contrib.auth.forms import UserChangeForm
 from .models import Smoothie
 from .forms import SmoothieForm
 
+@login_required
+def home(request):
+    return render(request, 'smoothies/home.html')
+
 def smoothie_list(request):
     smoothies = Smoothie.objects.all()
     return render(request, 'smoothies/smoothie_list.html', {'smoothies': smoothies})
