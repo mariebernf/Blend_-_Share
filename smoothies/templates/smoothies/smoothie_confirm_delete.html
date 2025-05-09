@@ -1,8 +1,8 @@
-{% extends 'smoothies/base.html'}
+{% extends 'smoothies/base.html' %}
 
 {% block content %}
 <div class="container mt-4">
-    <h2>Delet Smoothie</h2>
+    <h2>Delete Smoothie</h2>
     <p>Are you sure you want to delete? "{{ smoothie.title }}"</p>
     <form method="post">
         {% csrf_token %}
