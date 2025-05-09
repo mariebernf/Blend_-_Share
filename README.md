@@ -31,3 +31,7 @@
 **Solution:** *Closed the angle brackets properly in urls.py*
 
 ---
+
+**Issue:** *When trying to load the form page a template syntax error appeared.*
+
+**Solution:** *The form was incorrectly written using {% form.as_p %}. I changed it to curly braces for variables.*
