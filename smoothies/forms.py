@@ -4,4 +4,4 @@ from .models import Smoothie
 class SmoothieForm(forms.ModelForm):
     class Meta:
         model = Smoothie
-        fields = ['title', 'description']
+        fields = ['title', 'description', 'ingredients']
