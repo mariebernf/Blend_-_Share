@@ -10,10 +10,17 @@
             <div class="col-md-4">
                 <div class="card mb-3">
                     <div class="card-body">
-                        <h5 class="card-title">{{ smoothie.title }}</h5>
+                        <h5 class="card-title">
+                            {{ smoothie.title }}
+                            {% if smoothie.author == user %}
+                               <span class="badge bg-info text-dark">Your Recipe</span>
+                            {% endif %}
+                        </h5>
                         <p class="card-text">{{ smoothie.description|truncatewords:20 }}</p>
+                        {% if smoothie.author == user %}
                         <a href="{% url 'smoothie_edit' smoothie.id %}" class="btn btn-sm btn-primary">Edit</a>
                         <a href="{% url 'smoothie_delete' smoothie.id %}" class="btn btn-sm btn-danger">Delete</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
