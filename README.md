@@ -1,5 +1,27 @@
 # Blend_-_Share
 
+## Description
+
+## Project requirments
+
+## User stories
+
+## Design
+
+### Colour scheme
+
+### Typography
+
+### Wireframe
+
+## Technologies used
+
+## Tools used
+
+## Deployment
+
+## Testing
+
 ## Bugs and Fixes
 
 **Issue:** *ModuleNotFoundError: smoothies.forms not found.*
@@ -29,6 +51,8 @@
 **Issue:** *URL pattern syntax error: Unmatched brackets in the smoothie update and smoothie delete URL patterns.*
 
 **Solution:** *Closed the angle brackets properly in urls.py*
+
+## Credits
 
 ---
 
