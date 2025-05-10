@@ -1,4 +1,4 @@
-# Blend_-_Share
+# Blend_and_Share
 
 ## Description
 
